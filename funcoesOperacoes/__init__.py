@@ -1,3 +1,8 @@
+def cabecalho(txt):
+    print("-" * 50)
+    print(f"{txt:^50}")
+    print("-" * 50)
+
 def inclusao(agenda):
     pessoa = {'Nome': str(input('Insira o nome: ')), 'Telefone': int(input('Insira o número de telefone: '))}
     agenda.append(pessoa)

@@ -4,8 +4,8 @@
 # • Em todos as opções o nome da pessoa será utilizado como chave de pesquisa.
 # • Fazer uso de menu.
 # • Criar biblioteca de funções das operações.
-from ex12.funcoesOperacoes import *
-from exSala.modulos import cabecalho
+
+from funcoesOperacoes import *
 from time import sleep
 
 agenda = list()
