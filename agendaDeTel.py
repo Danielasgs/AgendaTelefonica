@@ -8,7 +8,6 @@
 from funcoesOperacoes import *
 from time import sleep
 
-menu = 0
 agenda = list()
 while True:
     print(f'{"Agenda telefônica":^50}')
