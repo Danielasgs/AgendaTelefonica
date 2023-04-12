@@ -16,7 +16,10 @@ def exclusao(agenda):
     else:
         nome = str(input('Insira o nome da pessoa a ser excluida: '))
         for i in range(0, len(agenda)):
-            if nome not in agenda and i + 1 == len(agenda):
+            if agenda[i]['Nome'] == nome and i == 0:
+                del agenda[i]
+                break
+            elif nome not in agenda and i + 1 == len(agenda):
                 print("Não foi possivel encontrar essa pessoa.")
             elif agenda[i]['Nome'] == nome:
                 del agenda[i]
