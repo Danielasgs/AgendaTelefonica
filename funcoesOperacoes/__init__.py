@@ -19,11 +19,12 @@ def exclusao(agenda):
             if agenda[i]['Nome'] == nome and i == 0:
                 del agenda[i]
                 break
-            elif nome not in agenda and i + 1 == len(agenda):
-                print("Não foi possivel encontrar essa pessoa.")
             elif agenda[i]['Nome'] == nome:
                 del agenda[i]
                 break
+            elif nome not in agenda and i + 1 == len(agenda):
+                print("Não foi possivel encontrar essa pessoa.")
+
     return agenda
 
 

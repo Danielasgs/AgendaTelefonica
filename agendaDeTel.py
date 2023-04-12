@@ -10,7 +10,7 @@ from time import sleep
 
 agenda = list()
 while True:
-    print(f'{"Agenda telefônica":^50}')
+    print(f'\n{"Agenda telefônica":^50}')
     cabecalho('menu')
     print('[1 - incluir]\n[2 - excluir]\n[3 - alterar]\n[4 - pesquisar]\n[5 - listar]\n[0 - Sair]')
     while True:
