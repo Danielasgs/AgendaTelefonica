@@ -8,13 +8,19 @@
 from funcoesOperacoes import *
 from time import sleep
 
+menu = 0
 agenda = list()
 while True:
-    cabecalho('Agenda telefônica')
+    print(f'{"Agenda telefônica":^50}')
     cabecalho('menu')
     print('[1 - incluir]\n[2 - excluir]\n[3 - alterar]\n[4 - pesquisar]\n[5 - listar]\n[0 - Sair]')
-    menu = int(input('Insira a opção: '))
-    match(menu):
+    while True:
+        try:
+            menu = int(input('Insira a opção: '))
+            break
+        except ValueError:
+            print("O menu só aceita números")
+    match (menu):
         case 0:
             break
         case 1:
